@@ -1,0 +1,19 @@
+@import "../../../scss/abstracts/variables";
+
+.flyout-cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  border-top: 1px solid #cfd8dc !important;
+	color: $green !important;
+	font-family: $font-family-primary !important;
+	font-size: 20px !important;
+	font-weight: $font-weight-700 !important;
+	line-height: 24px !important;
+
+  img {
+    width: 24px;
+    margin-right: 4px;
+  }
+}
