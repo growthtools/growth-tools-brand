@@ -1,6 +1,11 @@
-/*
- * Colors
- * _______________________________________ */
+/* this files contains all the variables listed in
+gt-core
+manage
+kpis
+university
+*/
+
+/* from gt-core */
 
 $green: #2cd886;
 $light-green: #2cd886;
@@ -28,3 +33,316 @@ $font-weight-400: 400; // normal
 $font-weight-500: 500;
 $font-weight-700: 700; // bold
 $font-weight-900: 900; // black
+
+/* from university - bootstrap overrides */
+$white: #ffffff;
+$white-grey: #f9fafa;
+$gray-100: #cdd8dd;
+$gray-200: #b0bec5;
+$gray-300: #90a4ae;
+$gray-400: #78909c;
+$gray-500: #607d8b;
+$gray-600: #546e7a;
+$gray-700: #455a64;
+$gray-800: #37474f;
+$gray-900: #263238;
+
+$wistia-blue: #3ea9f5;
+$blue: #0974f0;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$salmon: #ef4b54;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$canary-yellow: #ffd400;
+$green: #8cc63f;
+$public-green: #2cd886;
+$light-green: #bad452;
+$dark-green: #59930c;
+$cyan: #17a2b8;
+
+$navy: #114078;
+$black: #3a3a3c;
+$icey-blue: #f5faff;
+$light-grey: $gray-100;
+$light-grey-variation: #cfd8dc;
+$bright-green: #2ad09a;
+
+$gu-green: hsl(86, 54.2, 51.2);
+$gu-grey: hsl(0, 0, 82.4);
+
+$checkbox-green: #7ac810;
+
+$border-color: #eceff1;
+
+$colors: (
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "cyan": $cyan,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-800,
+  "black": $black,
+  "navy": $navy,
+  "light-grey": $light-grey,
+  "bright-green": $bright-green
+);
+
+$primary: $gu-green;
+$secondary: $gu-grey;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
+
+/* from manage - from bootstrap overrides file */
+$green: hsl(151, 69%, 51%);
+$blue: hsl(232, 62%, 23%);
+$bg-grey: hsl(0, 0%, 98%);
+$black: hsl(0, 0%, 18%);
+
+$body-color: $black;
+
+$navbar-light-active-color: $green;
+$navbar-light-color: $blue;
+
+/* from manage home page */
+$navy-blue: #131f61;
+$light-green: #2cd886;
+$grey: #90a4ae;
+$light-grey: #cfd8dc;
+$blue: #2a3cb9;
+
+$page-bg-color: $navy-blue;
+
+/* from manage variables file, these are bootstrap overrides too */
+$white: #ffffff;
+$black: #37474f;
+$gray: #78909c;
+
+$gray-100: #f9fafa;
+$gray-200: #eceff1;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #b0bec5;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$blue: #0974f0;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #ff0056;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$pale-yellow: #e1ff88;
+$green: #2cd886;
+$black-friday-green: #17da5e;
+$teal: #20c997;
+$cyan: #17a2b8;
+$dark-blue: #161F5D;
+
+/********************
+ App Colors
+*********************/
+$strawberry: #ef4b54;
+$bg-blue: rgba(22, 31, 93, 0.99);
+$sub-text: #90a4ae;
+$modal-overlay-color: #f9f9f9;
+
+/* Colors used in Accelerator landing pages */
+$accelerator-blue: #009aff;
+$accelerator-yellow: #ffd400;
+$accelerator-dark-gray: #263238;
+$accelerator-gray: #455a64;
+$accelerator-light-gray: #607d8b;
+
+/* Growth University Sales Page */
+$gu-gray: #263238;
+$gu-yellow-green: #8cc63f;
+$gu-dark-bg-color: #334850;
+
+$colors: (
+  "blue": $blue,
+  "indigo": $bg-blue,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-800,
+  "black": $black,
+  "primary": $green,
+  "sub-text": $sub-text,
+  "dark-blue": $dark-blue,
+  "accelerator-blue": $accelerator-blue,
+  "accelerator-yellow": $accelerator-yellow,
+  "accelerator-dark-gray": $accelerator-dark-gray,
+  "accelerator-gray": $accelerator-gray,
+  "accelerator-light-gray": $accelerator-light-gray,
+  "gu-gray": $gu-gray,
+  "gu-yellow-green": $gu-yellow-green,
+  "gu-dark-bg-color": $gu-dark-bg-color,
+);
+
+$primary: $green;
+$secondary: $gray-500;
+$success: $green;
+$info: $cyan;
+$warning: $accelerator-yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
+
+/********************
+ Bootstrap Component Var Overrides
+*********************/
+$dropdown-link-color: color("green");
+$dropdown-link-hover-color: darken($green, 20%);
+$dropdown-link-hover-bg: lighten($gray, 25%);
+
+
+/* from kpis variables file */
+
+/********************
+ Base Colors
+*********************/
+$red-orange: #ef4b54;
+$light-yellow: #ffd400;
+$lime-green: #8cc63f;
+$light-teal: #e6fcf3;
+$teal-green: #2cd886;
+$charcoal: #263238;
+$dark-charcoal: #37474f;
+$slate-grey: #90a4ae;
+$dark-slate-grey: #546e7a;
+$lighter-grey: #eceff1;
+
+
+/********************
+ Bootstrap Color Var Overrides
+*********************/
+$white: #ffffff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+$blue: #0095ff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #abdb7b;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+$navy: #114078;
+$black: #393939;
+$icey-blue: #f5faff;
+$light-grey: #fafafa;
+$bright-green: #2ad09a;
+
+$gu-green: hsl(86, 54.2, 51.2);
+$gu-grey: hsl(0, 0, 82.4);
+
+$pa-blue: #0094ff;
+$pa-cyan: #45eefb;
+$pa-dark-blue: #008ef2;
+
+$rich-green: #648767;
+$pale-blue: #b8e1ff;
+$dull-purple: #6c698d;
+
+$colors: (
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-800,
+  "black": $black,
+  "navy": $navy,
+  "icey-blue": $icey-blue,
+  "light-grey": $light-grey,
+  "bright-green": $bright-green
+);
+
+$primary: $pa-blue;
+$secondary: $rich-green;
+$success: $gu-green;
+$info: $pale-blue;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "gu-green": $gu-green
+);
+
+/********************
+ Bootstrap Component Var Overrides
+*********************/
+$dropdown-link-color: $blue;
+$dropdown-link-hover-color: $navy;
+$dropdown-link-hover-bg: desaturate($icey-blue, 50%);

@@ -1,0 +1,281 @@
+/*
+WIP!!
+This is a WIP progress document
+This is a collection of all repeating variables across
+kpis
+univerity
+gt-core
+manage
+*/
+
+
+$green: #2cd886; //gt-core
+$light-green: #2cd886; //gt-core
+$public-green: #2cd886; // univeristy bs ov
+$light-green: #2cd886; // manage home page
+$green: #2cd886; // manage bs ov
+$teal-green: #2cd886; // kpis
+$light-green: #bad452; //university
+
+
+$grey: #90a4ae; // gt-core
+$gray-300: #90a4ae; //univer bs ov
+$grey: #90a4ae; // manage home page
+$sub-text: #90a4ae; //manage app colors
+$slate-grey: #90a4ae; // kpis base colors
+
+$dark-grey: #263238; //gt-core
+$gray-900: #263238; // university bs ov
+$accelerator-dark-gray: #263238; // manage accelerator landing pages
+$gu-gray: #263238; // manage gu sales page
+$charcoal: #263238; //kpis
+
+$grey-100: #f9fafa; // gt-core
+$white-grey: #f9fafa; // univeristy bs overrides
+$gray-100: #f9fafa; // manage bs overrides
+
+$grey-200: #eceff1; // gt-core
+$border-color: #eceff1; //university bs ov
+$gray-200: #eceff1; // manage
+$lighter-grey: #eceff1; // kpis base colors
+
+$grey-300: #dee2e6; //gt-core
+$gray-300: #dee2e6; //manage
+$gray-300: #dee2e6; // kpis
+
+$grey-400: #ced4da; //gt-core
+$grey-400: #ced4da; // manage
+$grey-400: #ced4da; // kpis
+
+$grey-500: #b0bec5; // gt-core
+$gray-200: #b0bec5; // univeristy
+$gray-500: #b0bec5; // manage
+
+$black: #37474f; //gt-core
+$gray-800: #37474f; // university
+$black: #37474f; // manage
+$dark-charcoal: #37474f; // kpis base colors
+$black: #3a3a3c; // university
+
+
+$sub-text: $grey; //$grey: #90a4ae; gt-core
+$gu-grey: $dark-grey; //$dark-grey: #263238; gt-core
+
+$accelerator-blue: #009aff; //gt-core
+$accelerator-blue: #009aff; // manage app colors
+
+$accelerator-yellow: #ffd400; //gt-core
+$canary-yellow: #ffd400; // university bs ov
+$accelerator-yellow: #ffd400; // manage accelerator landing pages
+$light-yellow: #ffd400; //kpis base colors
+
+$white: #ffffff; // university bs ov
+$white: #ffffff; // manage
+$white: #ffffff; // kpis
+
+$gray-100: #cdd8dd; // university
+
+$gray-400: #78909c; //university
+$gray: #78909c; //manage
+
+$gray-500: #607d8b; //university
+$accelerator-light-gray: #607d8b; //manage accel landing pages
+
+$gray-600: #546e7a; //university
+$dark-slate-grey: #546e7a; // kpis
+
+$gray-700: #455a64; //university
+$accelerator-gray: #455a64; //accelerator landing pages
+
+$wistia-blue: #3ea9f5; // university
+
+$blue: #0974f0; // university
+$blue: #0974f0; // manage
+
+$indigo: #6610f2; //university
+$indigo: #6610f2; // manage
+$indigo: #6610f2; //kpis
+
+$purple: #6f42c1; //univeristy
+$purple: #6f42c1; //manage
+$purple: #6f42c1; //kpis
+
+$pink: #e83e8c; // univers
+$pink: #e83e8c; // mange
+$pink: #e83e8c; //kpis
+
+$red: #dc3545; // university
+$red: #dc3545; //kpis
+
+$salmon: #ef4b54; // university
+$strawberry: #ef4b54; //manage app colors
+$red-orange: #ef4b54; // kpis
+
+$orange: #050504; // university
+
+$yellow: #ffc107; //univeristy
+$yellow: #ffc107; // manage
+$yellow: #ffc107; // kpis
+
+$green: #8cc63f; //univeristy
+$gu-yellow-green: #8cc63f; //manage gu sales pages
+$lime-green: #8cc63f; //kpis
+
+$dark-green: #59930c; //university
+
+$cyan: #17a2b8; //univeristy
+$cyan: #17a2b8; //manage
+$cyan: #17a2b8; // kpis
+
+$navy: #114078; //university
+$navy: #114078; // kpis
+
+$black: #393939; // university
+
+$icey-blue: #f5faff; //university
+$icey-blue: #f5faff; //kpis
+
+$light-grey: $gray-100; $gray-100: #cdd8dd; //university
+$light-grey: #cfd8dc; // manage
+$light-grey: #fafafa; // kpis
+
+$light-grey-variation: #cfd8dc; //university
+$light-grey: #cfd8dc; // manage
+
+$bright-green: #2ad09a; //university
+$bright-green: #2ad09a; // kpis
+
+$gu-green: hsl(86, 54.2, 51.2);//university
+$primary: $gu-green;//university
+$gu-green: hsl(86, 54.2, 51.2);// kpis
+$success: $gu-green;
+
+$gu-grey: $dark-grey; //$dark-grey: #263238; //gt-core
+$gu-grey: hsl(0, 0, 82.4); //university
+$secondary: $gu-grey; //university
+$gu-grey: hsl(0, 0, 82.4); //kpis
+
+$checkbox-green: #7ac810; //univeristy
+
+$info: $cyan; //$cyan: #17a2b8; //univeristy
+$warning: $yellow; //$yellow: #ffc107; //univeristy
+$danger: $red; //$red: #dc3545; //univeristy
+$info: $cyan; // $cyan: #17a2b8; // manage
+$warning: $accelerator-yellow; //$accelerator-yellow: #ffd400; //manage
+$danger: $red; //$red: #ff0056; //manage
+$info: $pale-blue; //$pale-blue: #b8e1ff; kpis
+$warning: $yellow; //$yellow: #ffc107; kpis
+$danger: $red; //$red: #dc3545; kpis
+
+$light: $gray-100; //$gray-100: #cdd8dd; //university
+$light: $gray-100; // $gray-100: #f9fafa; manage sales page
+$light: $gray-100; // $gray-100: #f8f9fa; kpis
+
+$dark: $gray-800; //university $gray-800: #37474f;
+$dark: $gray-800; //manage $gray-800: #343a40;
+$dark: $gray-800;//kpis $gray-800: #343a40;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);      // university and manage
+
+$green: #2cd886; // gt-core
+$green: #8cc63f; // university
+$green: hsl(151, 69%, 51%); // manage bs overrides
+$navbar-light-active-color: $green; // manage bs ov
+$green: #2cd886; //manage vars file
+$green: #abdb7b; //kpis bs ov
+$primary: $green; //manage vars file
+$success: $green; // manage vars file
+$success: $green; //univeristy
+$dropdown-link-hover-color: darken($green, 20%); //manage gu sales
+
+$blue: hsl(232, 62%, 23%); //manage bs ov
+$blue: #2a3cb9; // manage home page
+$blue: #0974f0; // manage vars file
+$blue: #0095ff; // kpis
+$dropdown-link-color: $blue; // kpis $blue: #0095ff;
+$navbar-light-color: $blue; // manage $blue: hsl(232, 62%, 23%);
+
+$bg-grey: hsl(0, 0%, 98%); // manage, not used anywhere else
+
+$black: hsl(0, 0%, 18%); // manage bs over
+$body-color: $black; // manage bs ov
+$black: #37474f; // manage vars file
+$black: #393939; // kpis
+$black: #37474f; // gt core
+$black: #3a3a3c; // university
+
+$navy-blue: #131f61; // manage home page
+$page-bg-color: $navy-blue; // manage home page
+
+$gray-600: #6c757d; //manage
+$gray-600: #6c757d; // kpis
+$gray-600: #546e7a; // univeristy
+
+$gray-700: #455a64; // university
+$gray-700: #495057; // manage
+$gray-700: #495057; // kpis
+
+$gray-800: #343a40; // manage
+$gray-800: #343a40; // kpis
+$gray-800: #37474f; // univeristy
+$dark: $gray-800; // university
+
+$gray-900: #212529; // manage
+$gray-900: #263238; // univeristy
+$gray-900: #212529; // kpis
+
+$blue: #0095ff; //kpis
+$dropdown-link-color: $blue; // $blue: #0095ff; kpis
+$blue: #0974f0; // university
+$blue: hsl(232, 62%, 23%);
+$blue: #2a3cb9; // manage home page
+
+$red: #dc3545; // kpis
+$danger: $red; //kpis
+$red: #dc3545; // university
+$danger: $red; // university
+$red: #ff0056; // manage
+
+$orange: #050504; // university
+$orange: #fd7e14; // manage
+$orange: #fd7e14; //kpis
+
+$yellow: #ffc107; // manage
+$warning: $yellow; // kpis
+
+$pale-yellow: #e1ff88; // manage
+
+$black-friday-green: #17da5e;
+
+$teal: #20c997; // kpis
+$teal: #20c997; // manage
+
+$cyan: #17a2b8; // manage. kpis, university
+$info: $cyan; // manage
+
+$dark-blue: #161F5D;  //manage
+
+$modal-overlay-color: #f9f9f9; // manage
+
+$gu-dark-bg-color: #334850;
+
+$dropdown-link-color: color("green"); // manage $green: #2cd886;
+$dropdown-link-hover-color: darken($green, 20%); // manage $green: #2cd886;
+$dropdown-link-hover-bg: lighten($gray, 25%); // manage $gray: #78909c;
+
+
+$rich-green: #648767; //kpis
+$pale-blue: #b8e1ff; //kpis
+$dull-purple: #6c698d; //kpis
+$pa-blue: #0094ff; //kpis
+$pa-cyan: #45eefb; //kpis
+$pa-dark-blue: #008ef2; //kpis
