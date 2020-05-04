@@ -12,18 +12,19 @@ university
 /* from gt-core */
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
+//gt-core does not use Bootstrap
 
 $green: #2cd886;
 $light-green: #2cd886;
 
 $grey: #90a4ae;
 $dark-grey: #263238;
-$grey-100: #f9fafa; // overrides bs $gray-100: #f8f9fa !default;
-$grey-200: #eceff1; // overrides bs  $gray-200: #e9ecef !default;
-$grey-300: #dee2e6; //  not an override, same as bs
-$grey-400: #ced4da; // not an override, same as bs
-$grey-500: #b0bec5; // overrides bs $gray-500: #adb5bd !default;
-$black: #37474f; // overrides bs $black:    #000 !default;
+$grey-100: #f9fafa; // spelled with an 'e', same as bs $gray-100: #f8f9fa !default;
+$grey-200: #eceff1; // spelled with an 'e', same as bs $gray-200: #e9ecef !default;
+$grey-300: #dee2e6; // spelled with an 'e'! different name, but value same as bs $gray-300
+$grey-400: #ced4da; // // spelled with an 'e'! different name, but value same as bs $gray-400
+$grey-500: #b0bec5; // spelled with an 'e', same as bs $gray-500: #adb5bd !default;
+$black: #37474f; // overrides bs $black: #000 !default;
 
 $sub-text: $grey; //$grey: #90a4ae;
 $gu-grey: $dark-grey; //$dark-grey: #263238;
@@ -48,7 +49,7 @@ $gray-800: #37474f; // overrides bs $gray-800: #343a40 !default;
 $gray-900: #263238; // overrides bs $gray-900: #212529 !default;
 
 $wistia-blue: #3ea9f5;
-$blue: #0974f0; // overrides bs $blue:    #007bff !default;
+$blue: #0974f0; // overrides bs $blue: #007bff !default;
 $indigo: #6610f2; // not an override, same as bs
 $purple: #6f42c1; // not an override, same as bs
 $pink: #e83e8c; //  not an override, same as bs
@@ -66,7 +67,7 @@ $cyan: #17a2b8;  // not an override, same as bs
 $navy: #114078;
 $black: #3a3a3c;  // overrides bs $black:    #000 !default;
 $icey-blue: #f5faff;
-$light-grey: $gray-100;
+$light-grey: $gray-100; //#cdd8dd; overrides bs $gray-100: #f8f9fa !default;
 $light-grey-variation: #cfd8dc;
 $bright-green: #2ad09a;
 
@@ -78,32 +79,40 @@ $checkbox-green: #7ac810;
 $border-color: #eceff1;
 
 $colors: (
-  "blue": $blue,
-  "indigo": $indigo,
-  "purple": $purple,
-  "pink": $pink,
-  "red": $red,
-  "orange": $orange,
-  "yellow": $yellow,
-  "green": $green,
-  "cyan": $cyan,
-  "white": $white,
-  "gray": $gray-600,
-  "gray-dark": $gray-800,
-  "black": $black,
+  "blue": $blue, // #0974f0; overrides bs $blue:    #007bff !default;
+  "indigo": $indigo, //  not an override, same as bs
+  "purple": $purple, //  not an override, same as bs
+  "pink": $pink, //   not an override, same as bs
+  "red": $red, //  not an override, same as bs
+  "orange": $orange, // #050504;overrides bs $orange:  #fd7e14 !default;
+  "yellow": $yellow, //not an override, same as bs
+  "green": $green, // #8cc63f; overrides bs $green:   #28a745 !default;
+  "cyan": $cyan, // not an override, same as bs
+  "white": $white, // not an override, same as bs
+  "gray": $gray-600, // #546e7a; overrides bs $gray-600: #6c757d !default;
+  "gray-dark": $gray-800, // #37474f; overrides bs $gray-800: #343a40 !default;
+  "black": $black, // #3a3a3c; overrides bs $black:    #000 !default;
   "navy": $navy,
   "light-grey": $light-grey,
   "bright-green": $bright-green
 );
 
+// to be used as a function @function color($key: "blue") {
+//   @return map-get($colors, $key);
+// }
+// .custom-element {
+//   color: colors("cyan");
+//   background-color: theme-color("dark");
+// }
+
 $primary: $gu-green;
 $secondary: $gu-grey;
-$success: $green;
-$info: $cyan;
-$warning: $yellow;
-$danger: $red;
-$light: $gray-100;
-$dark: $gray-800;
+$success: $green; // overrides bs $green:   #28a745 !default;
+$info: $cyan; // not an override, same as bs
+$warning: $yellow; // not an override, same as bs
+$danger: $red; // not an override, same as bs
+$light: $gray-100; //#cdd8dd; overrides bs $gray-100: #f8f9fa !default;
+$dark: $gray-800; // #37474f; overrides bs $gray-800: #343a40 !default;
 
 $theme-colors: (
   "primary": $primary,
@@ -117,32 +126,32 @@ $theme-colors: (
 );
 
 ////////////////////////////////////////////////
-/* from manage - from bootstrap overrides file */
+/* from manage */
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
-$green: hsl(151, 69%, 51%);
-$blue: hsl(232, 62%, 23%); // overrides bs $blue:    #007bff !default;
+/* from bootstrap overrides file */
+$green: hsl(151, 69%, 51%); // overrides bs $green: #28a745 !default;
+$blue: hsl(232, 62%, 23%); // overrides bs $blue: #007bff !default;
 $bg-grey: hsl(0, 0%, 98%);
-$black: hsl(0, 0%, 18%);  // overrides bs $black:    #000 !default;
+$black: hsl(0, 0%, 18%);  // overrides bs $black: #000 !default;
 
 $body-color: $black;
-
 $navbar-light-active-color: $green;
 $navbar-light-color: $blue;
 
 /* from manage home page */
 $navy-blue: #131f61;
 $light-green: #2cd886;
-$grey: #90a4ae;
+$grey: #90a4ae; // spelled with an 'e'
 $light-grey: #cfd8dc;
-$blue: #2a3cb9; // overrides bs $blue:    #007bff !default;
+$blue: #2a3cb9; // overrides bs $blue: #007bff !default;
 
 $page-bg-color: $navy-blue;
 
 /* from manage variables file, these are bootstrap overrides too */
-$white: #ffffff;
-$black: #37474f;  // overrides bs $black:    #000 !default;
-$gray: #78909c;
+$white: #ffffff; // not an override, same as bs
+$black: #37474f;  // overrides bs $black: #000 !default;
+$gray: #78909c; //
 
 $gray-100: #f9fafa; // not an override, same as bs
 $gray-200: #eceff1; // overrides bs $gray-200: #e9ecef !default;
@@ -154,11 +163,11 @@ $gray-700: #495057; // not an override, same as bs
 $gray-800: #343a40; // not an override, same as bs
 $gray-900: #212529; // not an override, same as bs
 
-$blue: #0974f0; // overrides bs $blue:    #007bff !default;
+$blue: #0974f0; // overrides bs $blue: #007bff !default;
 $indigo: #6610f2; // not an override, same as bs
 $purple: #6f42c1; // not an override, same as bs
 $pink: #e83e8c; // not an override, same as bs
-$red: #ff0056; // overrides bs $red:     #dc3545 !default;
+$red: #ff0056; // overrides bs $red: #dc3545 !default;
 $orange: #fd7e14; // not an override, same as bs
 $yellow: #ffc107; // not an override, same as bs
 $pale-yellow: #e1ff88;
@@ -189,17 +198,17 @@ $gu-yellow-green: #8cc63f;
 $gu-dark-bg-color: #334850;
 
 $colors: (
-  "blue": $blue,
-  "indigo": $bg-blue,
-  "purple": $purple,
-  "pink": $pink,
-  "red": $red,
-  "orange": $orange,
-  "yellow": $yellow,
-  "green": $green,
-  "teal": $teal,
-  "cyan": $cyan,
-  "white": $white,
+  "blue": $blue, // overrides bs $blue: #007bff !default;
+  "indigo": $bg-blue, // not an override, same as bs
+  "purple": $purple, // not an override, same as bs
+  "pink": $pink, // not an override, same as bs
+  "red": $red, // overrides bs $red: #dc3545 !default;
+  "orange": $orange, // not an override, same as bs
+  "yellow": $yellow, // not an override, same as bs
+  "green": $green, // overrides bs $green:   #28a745 !default;
+  "teal": $teal, // not an override, same as bs
+  "cyan": $cyan, // not an override, same as bs
+  "white": $white, // not an override, same as bs
   "gray": $gray-600,
   "gray-dark": $gray-800,
   "black": $black,
@@ -306,20 +315,20 @@ $pale-blue: #b8e1ff;
 $dull-purple: #6c698d;
 
 $colors: (
-  "blue": $blue,
-  "indigo": $indigo,
-  "purple": $purple,
-  "pink": $pink,
-  "red": $red,
-  "orange": $orange,
-  "yellow": $yellow,
-  "green": $green,
-  "teal": $teal,
-  "cyan": $cyan,
-  "white": $white,
-  "gray": $gray-600,
-  "gray-dark": $gray-800,
-  "black": $black,
+  "blue": $blue, //  overrides bs $blue:    #007bff !default;
+  "indigo": $indigo, //  not an override, same as bs
+  "purple": $purple, //  not an override, same as bs
+  "pink": $pink, //  not an override, same as bs
+  "red": $red, //  not an override, same as bs
+  "orange": $orange, //  not an override, same as bs
+  "yellow": $yellow, //  not an override, same as bs
+  "green": $green, //  overrides bs $green:   #28a745 !default;
+  "teal": $teal, //  not an override, same as bs
+  "cyan": $cyan, //  not an override, same as bs
+  "white": $white, //  not an override, same as bs
+  "gray": $gray-600, //  not an override, same as bs
+  "gray-dark": $gray-800, //  not an override, same as bs
+  "black": $black, // #393939; overrides bs $black: #000 !default;
   "navy": $navy,
   "icey-blue": $icey-blue,
   "light-grey": $light-grey,
@@ -330,10 +339,11 @@ $primary: $pa-blue;
 $secondary: $rich-green;
 $success: $gu-green;
 $info: $pale-blue;
-$warning: $yellow;
-$danger: $red;
-$light: $gray-100;
-$dark: $gray-800;
+$warning: $yellow; //  not an override, same as bs
+$danger: $red; //  not an override, same as bs
+$light: $gray-100; //  not an override, same as bs
+$dark: $gray-800; //  not an override, same as bs
+
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
