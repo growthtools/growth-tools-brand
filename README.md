@@ -17,9 +17,10 @@ assets
     abstracts
       fonts: this is where font styles/font families are houses
       mixins: this is where mixins are housed
-      variables: this is where your variables are houses ex: $green: #2cd886;
+      variables_master: this is where your variables are houses ex: $green: #2cd886;
     base
-      base: this is where your base styles are housed ex: basic structure that is true across all pages
+      globals: this is where your base styles are housed ex: basic structure that is true across all pages
+      resets: this is where your styles go that override and align various browser differences
     pages
       example: this is where page specific styles are located, ex: _home.scss
     main.scss: this is where all your import statements are located
