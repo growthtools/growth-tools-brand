@@ -8,14 +8,26 @@ This npm package contains styles and branding shared across Growth Tools web dom
 
 `$ npm install --save @growth-tools/brand`
 
-### Import dependencies
+## File naming and file structure for scss files and styles
+The scss files in this project are set up to house different functionalities. In order to keep consistent, the following guide outlines which files contain which types of styles.
 
-## Using Font Assets
-
-**@growth-tools/brand** provides files for the Brandon Text fonts used by the React components.
-
-In the (unlikely) event these font files are not already included in the consuming project, either copy them from this package into the proper directory or refer to the example stylesheet at `/src/scss/EXAMPLE_FONTS_FILE.scss`.
-
+assets
+  fonts: this folder contains the actual font files (for now)
+  js
+  scss
+    abstracts
+      fonts: this is where font styles/font families are houses
+      mixins: this is where mixins are housed
+      variables_master: this is where your variables are houses ex: $green: #2cd886;
+    base
+      globals: this is where your base styles are housed ex: basic structure that is true across all pages
+      resets: this is where your styles go that override and align various browser differences
+    components
+      buttons: global button styles, colors should correspond with brand
+      forms: global form styles, colors should correspond with brand
+    pages
+      example: this is where page specific styles are located, ex: _home.scss
+    main.scss: this is where all your import statements are located
 
 ## How to test locally
 
@@ -35,5 +47,3 @@ $ npm link @growth-tools/brand
 
 4. The package should now be accessible to your local project for testing. Use as described above.
 
-## Fonts and Example file
-### fonts and example file located in growth-tools-core will eventually be moved to this repository growth-tools-brand
