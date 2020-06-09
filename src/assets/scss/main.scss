@@ -1,5 +1,8 @@
-@import "./abstracts/variables";
 @import "./abstracts/mixins";
 @import "./abstracts/fonts";
 @import "./abstracts/variables_master";
-@import "./base/base";
+@import "./base/globals";
+@import "./base/resets";
+@import "./pages/example";
+@import "./components/buttons";
+@import "./components/forms";
