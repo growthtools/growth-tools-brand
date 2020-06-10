@@ -1,49 +1,71 @@
-//
-//
-//
-//
-//  MASTER Variables file
-//
-//
-//
-//
-// This file is the Single Source of Truth 
-// https://projects.invisionapp.com/d/main#/console/19806019/417053466/preview
+/********************
+MASTER Variables file
+This file is the Single Source of Truth, https://projects.invisionapp.com/d/main#/console/19806019/417053466/preview
+********************/
 
-// All Brand Accent colors
-$growth-tools-green: #2CD886;
-$university-green: #8CC63F;
-$drip-scripts-green: #17DA5E;
-$goviral-orange: #FF7727;
-$welcomely-pink: #EF4B54;
-$attract-blue: #0974F0;
-$accelerator-blue: #009AFF;
+/********************
+Brand Accent colors
+********************/
 
-// All Brand Greys
-$grey-01: #F9FAFA;
-$grey-02: #ECEFF1;
-$grey-03: #CFD8DC;
-$grey-04: #B0BEC5;
-$grey-05: #90A4AE;
-$grey-06: #78909C;
-$grey-07: #607D8B;
-$grey-08: #546E7A;
-$grey-09: #455A64;
-$grey-10: #37474F;
+$growth-tools-green: #2cd886;
+$university-green: #8cc63f;
+$drip-scripts-green: #17da5e;
+$goviral-orange: #ff7727;
+$welcomely-pink: #ef4b54;
+$attract-blue: #0974f0;
+$accelerator-blue: #009aff;
+
+/********************
+Brand Greys
+********************/
+
+$grey-01: #f9fafa;
+$grey-02: #eceff1;
+$grey-03: #cfd8dc;
+$grey-04: #b0bec5;
+$grey-05: #90a4ae;
+$grey-06: #78909c;
+$grey-07: #607d8b;
+$grey-08: #546e7a;
+$grey-09: #455a64;
+$grey-10: #37474f;
 $grey-11: #263238;
 
-// All Secondary colors
-$growth-tools-gold: #FFD400;
-$growth-tools-navy-blue: #161F5D;
+/********************
+Brand Secondary colors
+********************/
 
-// Blacks & Whites
-// These are HSL values and should be used as HSL values to keep consistent with exact hue
+$growth-tools-gold: #ffd400;
+$growth-tools-navy-blue: #161f5d;
+
+/********************
+Brand Blacks & Whites
+These are HSL values and should be used as HSL values to keep consistent with exact hue
+********************/
+
 $black-75: hsla(0, 0%, 0%, 0.75);
-$black-50: hsla(0, 0%, 0%, 0.50);
+$black-50: hsla(0, 0%, 0%, 0.5);
 $black-25: hsla(0, 0%, 0%, 0.25);
-$black-10: hsla(0, 0%, 0%, 0.10);
+$black-10: hsla(0, 0%, 0%, 0.1);
 
-$white-50: hsla(0, 0%, 100%, 0.50);
+$white-50: hsla(0, 0%, 100%, 0.5);
 $white-25: hsla(0, 0%, 100%, 0.25);
-$white-10: hsla(0, 0%, 100%, 0.10);
+$white-10: hsla(0, 0%, 100%, 0.1);
 
+/********************
+Brand Custom Spacers
+*********************/
+$spacer: 1rem !default;
+$spacers: (
+  (
+    0: 0,
+    1: ($spacer * .25),  // .25 rem/4px, inherited from BS
+    2: ($spacer * .5),   // .5rem/8px, inherited from BS
+    3: $spacer,          // 1 rem/16px, inherited from BS
+    4: ($spacer * 1.5),  // 1.5rem/24px, inherited from BS
+    5: ($spacer * 3)     // 3rem/48px, inherited from BS
+    6: ($spacer * 2),    // 2rem/32px, custom addition
+    7: ($spacer * 2.5),  // 2.5rem/40px, custom addition
+    8: ($spacer * 0.375) // 0.375/6px, custom addition
+    )
+  );       

@@ -1,3 +1,24 @@
+/********************
+Usage Example
+********************
+
+Many buttons have font awesome icons, accommodated in example below, 
+right/left margins may need to be added to the icon to 
+accomodate 8px spacing, see spacing variables for sizes.
+ 
+<div class="some-class-name">
+  <i class="fa fa-any-icon" aria-hidden="true"></i>
+  <a href="/some-link">Link Words</a>
+</div>
+
+.some-class-name {
+  @extend %grey-btn {
+  }
+}
+********************/
+
+
+
 %tertiary-btn {
   display: flex;
   align-items: center;
@@ -5,15 +26,19 @@
   height: 32px;
   width: fit-content;
   padding: 0.375rem 0.5rem !important;
+  color: $university-green;
   font-size: 20px;
   font-weight: 500;
+  a {
+    color: $university-green;
+  }
   .fa {
     font-size: 16px;
-    color: $university-green;
+    color: $university-green; // color varies based on project
   }
   &:hover,
   a:hover {
-    color: $university-green;
+    color: $university-green; // color varies based on project
     background-color: lighten($university-green, 40%);
   }
 }
