@@ -5,19 +5,62 @@ Usage Example
 Many buttons have font awesome icons, accommodated in example below, 
 right/left margins may need to be added to the icon to 
 accomodate 8px spacing, see spacing variables for sizes.
- 
+
+********************
+General Example
+********************
 <div class="some-class-name">
   <i class="fa fa-any-icon" aria-hidden="true"></i>
   <a href="/some-link">Link Words</a>
 </div>
 
 .some-class-name {
-  @extend %grey-btn {
+  @extend %primary-btn {
   }
 }
 ********************/
+%primary-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  height: 48px;
+  width: fit-content;
+  padding: 1rem 1.5rem !important;
+  background-color: purple;
+  color: $white;
+  font-size: 20px;
+  font-weight: 500;
+  a {
+    color: $white;
+  }
+  &:hover {
+    box-shadow: 0 2px 24px 0 rgba(128, 0, 128, 0.7);
+    cursor: pointer;
+  }
+  &:active {
+    background-color: darken(purple, 5%);
+  }
+  &:focus {
+    box-shadow: 0 0 0 8px rgba(128, 0, 128, 0.2), 0 2px 24px 0 rgba(128, 0, 128, 0.6);
+    outline: none;
+  }
+  &:disabled {
+    opacity: 0.2;
+  }
+}
 
+%secondary-btn {
+  //
+}
 
+/********************
+Tertiary Button
+********************
+ <div class="action-item-link mb-2">
+  <i class="fa fa-arrow-left mr-2" aria-hidden="true"></i>
+  <a href="/this-week">Action items</a>
+ </div>
+********************/
 
 %tertiary-btn {
   display: flex;
@@ -36,9 +79,17 @@ accomodate 8px spacing, see spacing variables for sizes.
     font-size: 16px;
     color: $university-green; // color varies based on project
   }
-  &:hover,
-  a:hover {
+  &:hover {
     color: $university-green; // color varies based on project
     background-color: lighten($university-green, 40%);
   }
+  &:active {
+  }
+  &:focus {
+  }
+  &:disabled {
+  }
+}
+
+%simple-link {
 }

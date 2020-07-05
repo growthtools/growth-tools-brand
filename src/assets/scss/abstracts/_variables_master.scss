@@ -60,12 +60,16 @@ $spacers: (
   (
     0: 0,
     1: ($spacer * .25),  // .25 rem/4px, inherited from BS
+    8: ($spacer * 0.375) // 0.375/6px, custom addition
     2: ($spacer * .5),   // .5rem/8px, inherited from BS
     3: $spacer,          // 1 rem/16px, inherited from BS
     4: ($spacer * 1.5),  // 1.5rem/24px, inherited from BS
-    5: ($spacer * 3)     // 3rem/48px, inherited from BS
     6: ($spacer * 2),    // 2rem/32px, custom addition
     7: ($spacer * 2.5),  // 2.5rem/40px, custom addition
-    8: ($spacer * 0.375) // 0.375/6px, custom addition
+    5: ($spacer * 3),     // 3rem/48px, inherited from BS
+    5: ($spacer * 3.5)    // 3.5rem/56px, inherited from BS
     )
   );       
+
+  
+  $vertical-spacing: 1rem;
