@@ -18,7 +18,17 @@ General Example
   @extend %primary-btn {
   }
 }
+
+// use this mixin inside the btn mixin to set a fallback
+// color if $bgcolor doesn't work
+
+@mixin rgba-background($hexcolor, $opacity) {
+  background-color: $hexcolor;
+  background-color: rgba($hexcolor, $opacity); 
+}
+
 ********************/
+@mixin primary-btn ($color, $bgcolor) {
 %primary-btn {
   display: flex;
   align-items: center;
@@ -26,22 +36,22 @@ General Example
   height: 48px;
   width: fit-content;
   padding: 1rem 1.5rem !important;
-  background-color: purple;
-  color: $white;
+  background-color: $bgcolor;
+  color: $color;
   font-size: 20px;
   font-weight: 500;
   a {
-    color: $white;
+    color: $color;
   }
   &:hover {
-    box-shadow: 0 2px 24px 0 rgba(128, 0, 128, 0.7);
+    box-shadow: 0 2px 24px 0 rgba($bg-color, 0.7);
     cursor: pointer;
   }
   &:active {
-    background-color: darken(purple, 5%);
+    background-color: darken($bgcolor, 5%);
   }
   &:focus {
-    box-shadow: 0 0 0 8px rgba(128, 0, 128, 0.2), 0 2px 24px 0 rgba(128, 0, 128, 0.6);
+    box-shadow: 0 0 0 8px rgba($bg-color 0.2), 0 2px 24px 0 rgba($bg-color 0.6);
     outline: none;
   }
   &:disabled {
