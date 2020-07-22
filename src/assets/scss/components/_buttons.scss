@@ -18,21 +18,26 @@ General Example
   @include primary-btn {
   }
 }
-
 ********************/
-@mixin primary-btn($font-color, $bg-color) {
+@mixin btn {
   display: flex;
   font-family: "Brandon Text";
   align-items: center;
   border-radius: 6px;
   height: 48px;
   width: max-content;
-  padding: 1rem 1.5rem !important;
+  padding: 1rem 1.5rem;
+  font-size: 20px;
+  font-weight: 500;
+  a {
+    text-decoration: none;
+  }
+}
+
+@mixin btn-primary($font-color, $bg-color) {
+  @include btn;
   background-color: $bg-color;
   color: $font-color;
-  font-size: 20px;
-
-  font-weight: 500;
   a {
     color: $font-color;
     text-decoration: none;
@@ -54,39 +59,46 @@ General Example
   }
 }
 
-@mixin secondary-btn($font-color, $bg-color) {
-  //
+@mixin btn-secondary($color) {
+  @include btn;
+  border: 2px solid $color;
+  background-color: $white;
+  color: $color;
+  a {
+    color: $color;
+  }
+  &:hover {
+    box-shadow: 0 2px 24px 0 rgba($color, 0.7);
+    cursor: pointer;
+  }
+  &:active {
+    background-color: darken($color, 5%);
+  }
+  &:focus {
+    box-shadow: 0 0 0 8px rgba($color, 0.2), 0 2px 24px 0 rgba($color, 0.6);
+    outline: none;
+  }
+  &:disabled {
+    opacity: 0.2;
+  }
 }
 
-/********************
-Tertiary Button
-********************
- <div class="action-item-link mb-2">
-  <i class="fa fa-arrow-left mr-2" aria-hidden="true"></i>
-  <a href="/this-week">Action items</a>
- </div>
-********************/
-
-@mixin tertiary-btn($font-color, $bg-color) {
-  display: flex;
-  align-items: center;
+@mixin btn-tertiary($color) {
+  @include btn;
   border-radius: 4px;
   height: 32px;
-  width: fit-content;
   padding: 0.375rem 0.5rem !important;
-  color: $university-green;
-  font-size: 20px;
-  font-weight: 500;
+  color: $color;
   a {
-    color: $university-green;
+    color: $color;
   }
   .fa {
     font-size: 16px;
-    color: $university-green; // color varies based on project
+    color: $color;
   }
   &:hover {
-    color: $university-green; // color varies based on project
-    background-color: lighten($university-green, 40%);
+    color: $color;
+    background-color: lighten($color, 40%);
   }
   &:active {
   }
@@ -96,5 +108,11 @@ Tertiary Button
   }
 }
 
-%simple-link {
+@mixin btn-small {
+  height: 32px;
+  font-size: 14px;
+  padding: 1rem 1rem;
+}
+
+@mixin simple-link {
 }
