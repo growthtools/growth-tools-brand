@@ -15,43 +15,38 @@ General Example
 </div>
 
 .some-class-name {
-  @extend %primary-btn {
+  @include primary-btn {
   }
 }
 
-// use this mixin inside the btn mixin to set a fallback
-// color if $bgcolor doesn't work
-
-@mixin rgba-background($hexcolor, $opacity) {
-  background-color: $hexcolor;
-  background-color: rgba($hexcolor, $opacity); 
-}
-
 ********************/
-@mixin primary-btn ($color, $bgcolor) {
-%primary-btn {
+@mixin primary-btn($font-color, $bg-color) {
   display: flex;
+  font-family: "Brandon Text";
   align-items: center;
   border-radius: 6px;
   height: 48px;
-  width: fit-content;
+  width: max-content;
   padding: 1rem 1.5rem !important;
-  background-color: $bgcolor;
-  color: $color;
+  background-color: $bg-color;
+  color: $font-color;
   font-size: 20px;
+
   font-weight: 500;
   a {
-    color: $color;
+    color: $font-color;
+    text-decoration: none;
   }
   &:hover {
     box-shadow: 0 2px 24px 0 rgba($bg-color, 0.7);
     cursor: pointer;
   }
   &:active {
-    background-color: darken($bgcolor, 5%);
+    background-color: darken($bg-color, 5%);
   }
   &:focus {
-    box-shadow: 0 0 0 8px rgba($bg-color 0.2), 0 2px 24px 0 rgba($bg-color 0.6);
+    box-shadow: 0 0 0 8px rgba($bg-color, 0.2),
+      0 2px 24px 0 rgba($bg-color, 0.6);
     outline: none;
   }
   &:disabled {
@@ -59,7 +54,7 @@ General Example
   }
 }
 
-%secondary-btn {
+@mixin secondary-btn($font-color, $bg-color) {
   //
 }
 
@@ -72,7 +67,7 @@ Tertiary Button
  </div>
 ********************/
 
-%tertiary-btn {
+@mixin tertiary-btn($font-color, $bg-color) {
   display: flex;
   align-items: center;
   border-radius: 4px;
