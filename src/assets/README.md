@@ -1,0 +1,1 @@
+All style sheets and any mixins, icons, single js files are all for plain css and html designs. Anything React will be inside the react-components folder.
