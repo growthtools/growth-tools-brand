@@ -1,0 +1,81 @@
+@import 'variables_master';
+
+$breakpoints: (
+  "xs": 359px, //0 - 359px
+  "sm": 767px, //360px - 767px,
+  "md": 1023px, //768px - 1023,
+  "lg": 1439px, //1024px - 1439,
+  "xl": 1439px, //1440px and up,
+)
+
+$max-widths: (
+ "xs": 328px, // plus 16px RL margin = 360
+ "sm": 696px, // plus 36px RL margin = 768
+ "md": 984px, // plus 20px RL margin = 1024
+ "lg": 1344px, // plus 48px RL margin = 1440
+ "xl": 1344px, // plus 48px RL margin = 1440
+)
+
+
+ // xs
+ @media (max-width: 359.98px) {
+   max-width: 328px;
+ }
+ // sm
+ @media (min-width: 360px) and (max-width: 767.98px) {
+   max-width: 696px;
+ }
+ // md
+ @media (min-width: 768px) and (max-width: 1023.98px) {
+   max-width: 984px;
+ }
+ // lg
+ @media (min-width: 1024px) and (max-width: 1399.98px) {
+   max-width: 1344px;
+ }
+ // xl
+ @media (min-width: 1400px) {
+   max-width: 1344px;
+ }
+
+
+
+/*
+ * MOBILE-FIRST BREAKPOINTS
+ */
+
+@mixin for-sm-up {
+  @media (min-width: map-get($breakpoints, "sm")) { @content; }
+}
+
+@mixin for-md-up {
+  @media (min-width: map-get($breakpoints, "md")) { @content; }
+}
+
+@mixin for-lg-up {
+  @media (min-width: map-get($breakpoints, "lg")) { @content; }
+}
+
+@mixin for-xl-up {
+  @media (min-width: map-get($breakpoints, "xl")) { @content; }
+}
+
+/*
+ * DESKTOP-FIRST BREAKPOINTS
+ */
+
+@mixin for-xl-down {
+  @media (max-width: map-get($breakpoints, "xl")) { @content; }
+}
+
+@mixin for-lg-down {
+  @media (max-width: map-get($breakpoints, "lg")) { @content; }
+}
+
+@mixin for-md-down {
+  @media (max-width: map-get($breakpoints, "md")) { @content; }
+}
+
+@mixin for-sm-down {
+  @media (max-width: map-get($breakpoints, "sm")) { @content; }
+}
