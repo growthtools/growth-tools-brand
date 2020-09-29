@@ -1,17 +1,40 @@
- <div className="company-name form-group">
-            <label htmlFor="companytype">Company type</label>
-            <input type="companytype" className="form-control" id="companytype" placeholder="Choose a company type"></input>
-          </div>
-          
-            form {
-            display: flex;
-            flex-wrap: wrap;
-            .company-name {
-              flex: 100%;
-              margin-bottom: 1rem;
-              input {
-                height: 48px;
-              }
-            }
+label.gtbrand-label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  color: #263238;
+  font-family: "Brandon Text";
+  font-size: 16px;
+}
+input.gtbrand-input {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Brandon Text", sans-serif;
+  height: 48px;
+  border: 1px solid #cfd8dc;
+  border-radius: 6px;
+  padding: 0;
+  padding-left: 1rem;
+  font-size: 16px;
 
-//            look at filters from last-weeks-wins React component for more 
+  &::placeholder {
+    color: #b0bec5;
+    font-size: 16px;
+  }
+
+  &:focus {
+    border-color: #8cc63f;
+    border-radius: 6px;
+    box-shadow: 0 0 0 8px rgba(140, 198, 63, 0.3);
+    outline: none;
+  }
+  &:hover {
+    border-color: #8cc63f;
+  }
+  &:visited {
+    border-color: #b0bec5;
+  }
+  &:valid {
+    border-color: #b0bec5;
+  }
+}
