@@ -1,20 +1,38 @@
 // WIP
 html {
-  box-sizing: border-box;
+  font-family: $font-family-primary, sans-serif;
   font-size: 16px;
+  color: #263238;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+* {
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+a,
+ul,
+ol,
+input {
+  border: none;
   font-weight: normal;
 }
 
-ol, ul {
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  padding-left: 0;
   list-style: none;
 }
 

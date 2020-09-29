@@ -1,0 +1,79 @@
+// HTML
+// <div class="partnership-dropdown dropdown">
+//   <label for="partnership-dropdown-select">Partnership type</label>
+
+//   <div class="dropdown-toggle" data-flip="false" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+//     aria-expanded="false">
+//     Select...
+//   </div>
+//   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+//     <a class="dropdown-item" href="#">Webinar</a>
+//     <a class="dropdown-item" href="#">Podcast</a>
+//     <a class="dropdown-item" href="#">Guest Podcast</a>
+//     <a class="dropdown-item" href="#">Lead Magnet Swap</a>
+//   </div>
+//   <div class="partnership-dropdown--choose-partnership-btn">
+//     <a href="">Choose partnership type</a>
+//   </div>
+// </div>
+
+@import "../variables";
+@import "../abstracts/buttons";
+
+.partnership-dropdown {
+  label {
+    color: #263238;
+    padding: 0 0 0.5rem 1rem;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  &.dropdown {
+    font-family: "Brandon Text";
+    &.show {
+      .dropdown-toggle {
+        box-sizing: border-box;
+        border: 1px solid #8cc63f;
+        box-shadow: 0 0 0 8px rgba(140, 198, 63, 0.3);
+      }
+    }
+    .dropdown {
+      &-toggle {
+        box-sizing: border-box;
+        height: 48px;
+        width: 456px;
+        padding: 0.65rem 0 0.5rem 1rem;
+        border: 1px solid #cfd8dc;
+        border-radius: 6px;
+        background-color: #ffffff;
+        color: #b0bec5;
+        font-size: 16px;
+        &::after {
+          float: right;
+          margin: 0.65rem 0.75rem;
+        }
+      }
+
+      &-menu {
+        width: 100%;
+        padding: 0 !important;
+        top: 1rem !important;
+        border: none;
+        box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+        a:not(:last-of-type) {
+          border-bottom: 1px solid $grey-02;
+        }
+      }
+      &-item {
+        min-height: 56px;
+        line-height: 45px;
+        color: #263238;
+        font-size: 16px;
+      }
+    }
+  }
+  &--choose-partnership-btn {
+    @include btn-primary($white, $university-green);
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+}
