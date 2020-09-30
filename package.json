@@ -1,6 +1,6 @@
 {
   "name": "@growth-tools/brand",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A package for styles and branding shared across Growth Tools web domains.",
   "main": "./dist/bundle.js",
   "scripts": {
