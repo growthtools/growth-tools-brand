@@ -8,7 +8,7 @@
     "build": "webpack",
     "prepare": "rm -rf ./dist && npm run build"
   },
-  "author": "",
+  "author": "Kacy Hulme",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.8.3",
@@ -31,5 +31,13 @@
   "peerDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/growthtools/growth-tools-brand.git"
+  },
+  "bugs": {
+    "url": "https://github.com/growthtools/growth-tools-brand/issues"
+  },
+  "homepage": "https://github.com/growthtools/growth-tools-brand#readme"
 }
