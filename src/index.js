@@ -1,1 +1,1 @@
-console.log("this is fron gt brand")
+console.log("this is from gt brand")
